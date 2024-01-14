@@ -1,0 +1,112 @@
+/* Complete Page */
+*{
+   margin: 0px; 
+   box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.main-page{
+    height: 100vh;
+    display: flex;
+}
+
+/* Side Line */
+.side-line{
+    background-color: slateblue;
+    height:100%;
+    width: 25px;
+}
+
+/* Side Bar */
+.side-bar{
+    background-color: rgb(181, 146, 214);
+    height:100%;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 150px ;
+    padding-bottom: 150px ;
+    box-shadow: 1px 1px 10px rgb(185, 185, 185);
+    
+}
+.circle{
+    height: 75px;
+    width:75px;
+    background-color: gray ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.circle:hover{
+    background-color:rgb(85, 82, 82) ;
+}
+.circle:active{
+    background-color: slateblue;
+}
+.blue-circle{
+    background-color:  slateblue;
+}
+/* Right Panel */
+.right-panel{
+    display: flex;
+    flex-direction: column;
+    /*background-color: wheat; */
+    height: 100%;
+    width: 100%;
+}
+/* Right Panel */
+.header{
+    background-color:  slateblue;
+    width: 100%;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgb(185, 185, 185);
+}
+.logo-container{
+    padding-right: 1px; 
+ }
+.empty-side{
+   padding-left: 100px; 
+}
+.h1{
+    font-family:"Roboto";
+    color: black;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+/* tablet-container*/
+.tablet-container{
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#file {
+    display: none;
+  }
+
+#img-main, #tablets-image {
+    max-width: 100%; /* Ensure images don't exceed their natural size */
+    height: auto; /* Maintain aspect ratio when resizing */
+    display: block; /* Remove extra space below inline-block images */
+}
+
+#main-canvas{
+    position:absolute;
+    z-index: -1;
+}
+#img-main{
+    position: absolute;
+        top: 50%;  /* Adjust the value based on your design */
+        left: 50%; /* Adjust the value based on your design */
+        transform: translate(-50%, -50%);
+}

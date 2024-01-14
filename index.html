@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Web</title>
+
+    <!-- ADD OPENCV -->
+    <script async src="../resources/opencv.js" onload="openCvReady()"></script>
+    <!-- Link to css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Adding material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Add fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main page (inside this we will have everything)-->
+    <div class="main-page">
+        <!-- Side line -->
+        <div class="side-line"></div>
+        <!-- Side bar -->
+        <div class="side-bar">
+            <span class="circle" id="button-rgb"><i class="material-icons"style="font-size: 36px; color: white;">palette</i></span>
+            <span class="circle" id="button-gray"><i class="material-icons"style="font-size: 36px; color: white;">contrast</i></span>
+            <span class="circle" id="button-blur"><i class="material-icons"style="font-size: 36px; color: white;">blur_on</i></span>
+            <span class="circle" id="button-edge"><i class="material-icons"style="font-size: 36px; color: white;">grade</i></span>
+            <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
+            <label for="file" style="cursor: pointer;"><span class="circle blue-circle" id ="upload-image"><i class="material-icons"style="font-size: 36px; color: white;">upload_file</i></span></label>
+            <img id="output" width="200" />
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <!-- Header -->
+            <div class="header">
+                <div class="empty-side"></div>
+                <h1>Mhd Photoshop</h1>
+                <div class="logo-container"><img src="../templs/mhd.jpg" alt="" srcset="" width="110"></div>
+            </div>
+            <!-- tablet-container -->
+            <div class="tablet-container">
+                <img id="tablets-image" src="templs\tablet.png" width="50%" height="75%" alt="" >
+                <canvas id="main-canvas" width="900" height="550">
+                    <img id="img-main" src="../../templs/car.jpg" alt="" width="650" height="500" srcset="">
+                </canvas>
+            </div>
+        </div>
+
+
+
+    </div>
+    
+    <!-- Link the js file -->
+    <script src="main.js"></script>
+</body>
+</html>
